@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Page</title>
+    <style>
+        *{
+            padding:0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .header{
+            height: 102px;
+            width: 100%;
+            background-color: #0c1228;
+        }
+        .links{
+            list-style: none;
+            display: inline-block;
+            text-align: center;
+            color: white;
+            font-style:bold ;
+            position: relative;
+            left:1000px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .nav-links{
+            display: inline-block;
+             padding: 10px;
+           
+            
+        }
+        .button{
+            border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+            display: inline-block;
+            background-color: #0076B9;
+            position: relative;
+            left:1009px;
+           
+           
+        }
+        .buttons1{
+            background-color: #0076B9;
+            border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 40px;
+            
+        }
+        .buttons2{
+            background-color: #0076B9;
+            border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 20px;
+        }
+        .read{
+            background-color: #0076B9;
+            border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  float:left;
+  
+        }
+        .banner{
+            height:370px;
+            width:100%;
+            background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+        }
+        .heading{
+            text-align: center;
+            padding: 90px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h3{
+            padding: 10px;
+
+        }
+        .myheading{
+            text-align: center;
+            padding:30px
+        }
+        .myheading .he{
+            color: #0076B9;
+        }
+        .hea{
+            padding:5px;
+            font-size: 30px;
+        }
+        .innercontent{
+            display:flex;
+        }
+        .pa{
+            margin-top: 50px;
+            text-align: justify;
+        }
+        .para{
+            margin-top: 20px;
+            text-align: justify;
+
+        }
+        .paragraph{
+            display: block;
+        }
+        .imagetag{
+            height:50px;
+            position:absolute;
+            margin-left: 60px;
+        }
+        .course h1{
+            font-size: 30px;
+            text-align: center;
+        }
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 280px;
+  background-color: #5875Fc;
+  margin-left: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+  align-items: center;
+  position:absolute;
+  margin-top: 75px;
+  text-align: center;
+  margin-left: 25px;
+}
+.container img{
+    height: 70px;
+    margin-bottom: 15px;
+}
+.container h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.cards1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+
+}
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #8cc24a;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card3{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #28314e;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card4{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #fec009;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card5{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #ff9702;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card6{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #ea1e63;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card7{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #795549;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card8{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 280px;
+  width: 290px;
+  background-color: #5bc7f8;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.cards1 img{
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+   
+}
+.cards1 h4{
+    text-align: center;
+}
+.footer{
+    background-color:#0c1228 ;
+    color: white;
+    height:90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.footer h1{
+    font-size: 40px;
+}
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="imagetag">
+        <img src="image1.png">
+        </div>
+        <ul class="nav-links">
+            <li class="links">Home |</li>
+            <li class="links">About Us |</li>
+            <li class="links">Services |</li>
+            <li class="links">Contact |</li>
+            <li class="links">Gallery</li>
+            <button class="button">Get A Quote</button>
+           </ul>
+           </div>
+           <div class="banner">
+               <div class="heading">
+               <h1>Graphic Designing Services</h1>
+               <h3>We understand Your Dreams And Work On it Like Our Own Dream</h3>
+               <button class="buttons1">Get A Quote</button>
+               <button class="buttons2">Our Services</button>
+            </div>
+         </div>
+         <div class="mycontent">
+             <div class="myheading">
+             <h2 class="he">WsCube Tech Understands You</h2>
+             <h2 class="hea">Business And Takes It In Its Hands Like Its Own Business</h2>
+             </div>
+             <div class="innercontent">
+                 <img src="image2.png">
+                 <div class="paragraph">
+                 <p class="pa">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, earum provident nulla autem nihil magni, modi maiores sunt nam ipsam suscipit repellat quos. Nihil ea quaerat eos ipsum maxime quasi quod aspernatur animi quas eaque, commodi fugit, doloribus laborum odit facilis culpa aliquid nisi dolores distinctio veritatis recusandae magnam tempora dolorum neque! Quae, veritatis fugiat. Blanditiis quam repellat hic perspiciatis quas molestiae nam voluptatem id, voluptates cum odit atque nulla, ipsa nemo aliquam mollitia soluta nesciunt eligendi ex, maiores rem eos aperiam explicabo officia. Quam voluptas tempore quod consectetur alias, minus earum ipsum pariatur itaque sint ullam obcaecati cum, ab dolor ad facere iure voluptates eius maxime hic saepe iusto neque distinctio dolorem! Provident, quae animi delectus quis fugit molestiae voluptatibus. A debitis atque minima sequi eligendi eos in porro ut illo! Quod perspiciatis magni aliquam officiis, impedit facilis! Hic suscipit animi asperiores quis sit itaque voluptate, blanditiis fugiat voluptatibus eligendi, atque quaerat, earum quam aperiam optio numquam ipsum natus ad distinctio laborum nihil soluta corrupti obcaecati id. Ullam cum adipisci accusantium asperiores maiores blanditiis voluptatum! Corrupti, dignissimos eius omnis saepe eligendi, ipsam ratione necessitatibus quod dolorem repellat iusto dicta, a repellendus. Laudantium quam dolores placeat? Expedita excepturi explicabo quibusdam.</p>
+             <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod culpa aperiam, quasi omnis quo inventore numquam facere sint hic reiciendis cumque, eius modi praesentium quibusdam necessitatibus eaque eos placeat perferendis magni optio. Dolores sit ad facere eveniet, perferendis illum a laboriosam earum deserunt suscipit vitae, eaque eos ducimus dolore odit neque dolor, libero sint distinctio quasi. Laudantium fugit animi impedit hic quia aspernatur quas expedita, voluptatem rem reprehenderit non eligendi nam repellendus nihil dolorum architecto? Sint repellat necessitatibus harum blanditiis optio id, accusamus eius unde. Nobis nam sint in soluta? Exercitationem laboriosam, eius fuga quo nemo delectus nulla iste tenetur odio, voluptates illo quisquam! Nulla, voluptatem? Autem dicta itaque amet dolorum, adipisci sunt voluptates blanditiis eveniet natus impedit dolore ex, vero laborum corrupti odio quisquam, cum dolor corporis eum voluptatibus reprehenderit? Ut ipsam hic facilis praesentium molestiae culpa neque assumenda, ab repellendus laborum blanditiis, nam officia numquam magnam quas sunt sequi voluptates eius unde non. Odio adipisci, corporis aliquid fugit velit natus fugiat nulla est accusantium excepturi? Fuga, fugit soluta qui quam nam delectus. Rem omnis repellat commodi nihil ipsam veritatis iste est, reiciendis, modi optio, atque dicta. </p>
+            <button class="read">Read More...</button>    
+            </div>
+                </div>
+                <div class="course">
+                    <h1>Our Training course</h1>
+                    </div>
+                    <div class="cards">
+                    <div class="card">
+                        <div class="container">
+                            <img src="php.png" alt="">
+                          <h4><b>PHP Web Development</b></h4>
+                          </div>
+                          </div>
+                          <div class="card2">
+                            <div class="container">
+                                <img src="Screenshot 2022-01-15 133428.png" alt="">
+                              <h4><b>Android App Development</b></h4>
+                              </div>
+                              </div>
+                              <div class="card3">
+                                <div class="container">
+                                    <img src="image4.png" alt="">
+                                  <h4><b>IPHONE Development</b></h4>
+                                  </div>
+                                  </div>
+                                  <div class="card4">
+                                    <div class="container">
+                                        <img src="image5.png" alt="">
+                                      <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;PYTHON Training</b></h4>
+                                      </div>
+                                      </div>
+
+                         
+                      </div>
+                      <div class="cards1">
+                        <div class="card5">
+                            <div class="container">
+                                <img src="image3.png" alt="">
+                              <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA Training</b></h4>
+                              </div>
+                              </div>
+                              <div class="card6">
+                                <div class="container">
+                                    <img src="image6.png" alt="">
+                                  <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Testing</b></h4>
+                                  </div>
+                                  </div>
+                                  <div class="card7">
+                                    <div class="container">
+                                        <img src="image7.png" alt="">
+                                      <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;Digital Marketing</b></h4>
+                                      </div>
+                                      </div>
+                                      <div class="card8">
+                                        <div class="container">
+                                            <img src="image8.png" alt="">
+                                          <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;Website Designing</b></h4>
+                                          </div>
+                                          </div>
+    
+                             
+                          </div>
+                          <footer class="footer">
+                              <h1>Footer Information</h1>
+                          </footer>
+                      
+                
+             
+         </div>
+</body>
+</html>
